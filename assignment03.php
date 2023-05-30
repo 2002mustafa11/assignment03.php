@@ -38,7 +38,7 @@ echo '<br>';
 
 $str='eraasoft';
 $charact='r';
-
+/*
 for ($i=0; $i < strlen($str); $i++) { 
     if ($str[$i]==$charact) {
         $i++;
@@ -46,6 +46,15 @@ for ($i=0; $i < strlen($str); $i++) {
     @$str0.=$str[$i];
 }
 echo $str0;
+*/
+$S=0;
+for ($i=0; $i < strlen($str); $i++) { 
+    if ($str[$i]==$charact) {
+        $S++;
+    }
+    
+}
+echo $S;
 echo '<br>';
 echo '<br>';
 
