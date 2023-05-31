@@ -153,7 +153,7 @@ function even_oddno($n){
     
 $numbers = [11, 55, 24, 43, 44, 545, 6, 777, 810, 94, 140]; $x = 545;
 
-
+/*
 function function_6($numbers,$x){
 $array=[];
 if ($x>=1) {
@@ -183,6 +183,43 @@ if (strrev($x)==$x) {
 //print_r($array);
 
 echo implode(',',$array);
+}*/
+function function_6($numbers,$x){
+$array=[];
+//$array[] = (function_3($numbers,$x)==1) ? 'Found' : 'not Found' ;
+if (function_3($numbers,$x)==1) {
+    
+    $array[]= ' Found';
+    
+if ($x>=1) {
+    $array[]='Positive ';
+}elseif($x<0){
+    $array[]='Negative ';
+}
+
+
+
+
+$array[]=strlen($x);
+
+#Is-Prime or not===========
+$array[] = (PrimeNumber($x)==0) ? "not Prime" : "Prime" ;
+  
+
+$array[]=even_oddno($x);
+
+
+
+if (strrev($x)==$x) {
+    $array[]='read from the right as the left';
+}else {
+    $array[]='not read from the right as the left';
+}
+//print_r($array);
+
+echo implode(',',$array);
+}
+else {$array[]=  'not Found';}
 }
 function_6($numbers,$x);
 echo '<br>';
