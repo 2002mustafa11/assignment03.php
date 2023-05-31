@@ -117,17 +117,32 @@ function  SmallestNumber($numbers){
     factorial();
     echo '<br>';
     echo '<br>';
-    
+    /*
 for ($i=0; $i <= 15; $i++) { 
     if ($i%2!=0) {
         echo $i;
     }
+}*/
+$a=0;
+while ($a <= 15) {
+    if ($a%2!=0) {
+        echo $a;
+    }
+    $a++;
 }
 echo '<br>';
+/*
 for ($i=1; $i <= 15; $i++) { 
     if ($i%2==0) {
         echo $i;
     }
+}*/
+$a=0;
+while ($a <= 15) {
+    if ($a%2==0) {
+        echo $a;
+    }
+    $a++;
 }
 echo '<br>';
 $person = array("name" => "John", "age" => 30, "city" => "New York");
